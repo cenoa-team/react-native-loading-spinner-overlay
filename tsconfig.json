@@ -1,16 +1,8 @@
 {
   "include": ["src"],
-  "exclude": [
-    "node_modules",
-    "config.js"
-
-  ],
+  "exclude": ["node_modules", "config.js"],
   "compilerOptions": {
-    "lib": [
-      "es5",
-      "es6",
-      "esnext.asynciterable"
-    ],
+    "lib": ["es5", "es6", "esnext.asynciterable"],
     "allowSyntheticDefaultImports": false,
     "esModuleInterop": false,
     "jsx": "react",
@@ -19,6 +11,8 @@
     "target": "esnext",
     "resolveJsonModule": true,
     "outDir": "./lib",
-    "declaration": true
+    "declaration": true,
+    "skipLibCheck": true,
+    "noImplicitAny": false
   }
 }
